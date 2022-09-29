@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sgpa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        SGPA CALCULATOR
+ 
+    </nav>
+    <div class="cards">
+        <div class="card">
+            <div class="card-image">
+                <table>
+
+                    <tr>
+                        <td>50 CH 001</td>
+                        <td><input type="text" id="s1"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CH 0P1</td>
+                        <td><input type="text" id="s2"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 001</td>
+                        <td><input type="text" id="s3"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 0P1</td>
+                        <td><input type="text" id="s4"></td>
+                    </tr>
+                    <tr>
+                        <td>50 EN 001</td>
+                        <td><input type="text" id="s5"></td>
+                    </tr>
+                    <tr>
+                        <td>50 MA 001</td>
+                        <td><input type="text" id="s6"></td>
+                    </tr>
+                    <tr>
+                        <td>50 ME 003</td>
+                        <td><input type="text" id="s7"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="sem1()">check</button></td>
+                        <td><textarea id="sem1" cols="5" rows="1"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-description">
+                <h1>sem 1</h1>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <table>
+
+                    <tr>
+                        <td>50 EE 001</td>
+                        <td><input type="text" id="s21"></td>
+                    </tr>
+                    <tr>
+                        <td>50 EN 002</td>
+                        <td><input type="text" id="s22"></td>
+                    </tr>
+                    <tr>
+                        <td>50 MA 002</td>
+                        <td><input type="text" id="s23"></td>
+                    </tr>
+                    <tr>
+                        <td>50 ME 002</td>
+                        <td><input type="text" id="s24"></td>
+                    </tr>
+                    <tr>
+                        <td>50 ME 0P1</td>
+                        <td><input type="text" id="s25"></td>
+                    </tr>
+                    <tr>
+                        <td>50 PH 003</td>
+                        <td><input type="text" id="s26"></td>
+                    </tr>
+                    <tr>
+                        <td>50 PH 0P2</td>
+                        <td><input type="text" id="s27"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="sem2()">check</button></td>
+                        <td><textarea id="sem2"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-description">
+                <h1>sem2</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <table>
+
+                    <tr>
+                        <td>50 MA 005</td>
+                        <td><input type="text" id="s31"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 002</td>
+                        <td><input type="text" id="s32"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 003</td>
+                        <td><input type="text" id="s33"></td>
+                    </tr>
+                    <tr>
+                        <td>50 EC 002</td>
+                        <td><input type="text" id="s34"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 301</td>
+                        <td><input type="text" id="s35"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 0P2</td>
+                        <td><input type="text" id="s36"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 0P3</td>
+                        <td><input type="text" id="s37"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="sem3()">check</button></td>
+                        <td><textarea id="sem3"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-description">
+                <h1>sem3</h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <table>
+
+                    <tr>
+                        <td>50 CS 401</td>
+                        <td><input type="text" id="s41"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 402</td>
+                        <td><input type="text" id="s42"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 403</td>
+                        <td><input type="text" id="s43"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 4P1</td>
+                        <td><input type="text" id="s44"></td>
+                    </tr>
+                    <tr>
+                        <td>50 CS 4P2</td>
+                        <td><input type="text" id="s45"></td>
+                    </tr>
+                    <tr>
+                        <td>50 IT 001</td>
+                        <td><input type="text" id="s46"></td>
+                    </tr>
+                    <tr>
+                        <td>OE</td>
+                        <td><input type="text" id="s47"></td>
+                    </tr>
+                    <tr>
+                        <td>51 MA 001</td>
+                        <td><input type="text" id="s48"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="sem4()">check</button></td>
+                        <td><textarea id="sem4"></textarea></td>
+                    </tr>
+                </table>
+                
+        </div>
+                <div class="card-description">
+                    <h1>sem4
+                    </h1>
+                </div>
+            </div>
+            <nav style="font-size: 20px;">
+                <p style="color: crimson;">note! cgpa upto 4th semester only be calculated</p>
+                <div class="cgpa">      <button onclick="cgpa()">cgpa</button>
+                    <textarea name="" id="cgpa" cols="30" rows="1"></textarea></div>
+                © santhosh.s || 2022
+            </nav>
+            <script src="./index.js"></script>
+</body>
+
+</html>

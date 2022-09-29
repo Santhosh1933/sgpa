@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: auto;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.139);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    height: 70vh;
+    width: 30%;
+    margin: 5rem;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    -webkit-box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    ;
+    overflow: hidden;
+}
+
+/*Image*/
+.card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #0a3394;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #0a3394, #4286f4);
+}
+
+/*Description */
+.card-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.text-body {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+
+/* Hover states */
+
+.card:hover .card-description {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+table, tr, th, td {
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+table input, textarea {
+    padding: 5px 20px;
+    background-color: #0a33943f;
+    backdrop-filter: blur(5px);
+    outline: none;
+    color: white;
+    border: 2px solid #0a3394;
+}
+
+/* From uiverse.io */
+button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    z-index: 0;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.cgpa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+    .card{
+        width: 100%;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 100%;
+        margin: 1rem;
+
+    }
+    table input, textarea {
+        padding: 5px 5px;
+    }
+    nav{
+        font-size: 20px
+    }
+    .cgpa{
+        gap: 1rem;
+    }
+    .cgpa textarea{
+        width: 50%;
+    }
+  }
+    
